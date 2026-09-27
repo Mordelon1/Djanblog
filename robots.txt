@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_plantilla/
+
+Sitemap: https://djantercapital.cl/sitemap.xml
