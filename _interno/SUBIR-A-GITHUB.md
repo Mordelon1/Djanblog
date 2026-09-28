@@ -25,7 +25,7 @@ En la versión anterior existía el archivo `_plantilla/entrada.html`. Ahora la 
 2. Botón **Add file** → **Upload files**.
 3. Abre en otra ventana tu carpeta `Documentos\Djanter\web2`.
 4. Selecciona y **arrastra** a la página de GitHub:
-   - las carpetas: `blog`, `capacitaciones`, `consultoria`, `descripcion-de-cargos`, `estudio-clima-laboral`, `evaluacion-psicolaboral`, `nosotros`, `people-analytics`, `privacidad`, `recursos`, `seleccion-de-personal`, `_plantilla`
+   - las carpetas: `blog`, `capacitaciones`, `consultoria`, `descripcion-de-cargos`, `estudio-clima-laboral`, `evaluacion-psicolaboral`, `nosotros`, `people-analytics`, `preguntas-frecuentes`, `privacidad`, `recursos`, `seleccion-de-personal`, `_plantilla`
    - los archivos: `index.html`, `404.html`, `robots.txt`, `sitemap.xml`, `og-djanter.jpg`, `favicon.ico`, `apple-touch-icon.png`, `logo-djanter-512.png`, `.nojekyll`
    
    > Importante: **arrastra**. El botón "choose your files" no sube carpetas.
@@ -51,7 +51,7 @@ Si alguna se ve sin diseño o da error 404, casi siempre es una carpeta que no s
 ## Avisar a Google (Search Console)
 
 1. Entra a **search.google.com/search-console** → propiedad `djantercapital.cl`.
-2. Menú **Sitemaps** → escribe `sitemap.xml` → **Enviar**. (Si ya estaba, vuelve a enviarlo: ahora tiene 26 direcciones.)
+2. Menú **Sitemaps** → escribe `sitemap.xml` → **Enviar**. (Si ya estaba, vuelve a enviarlo: ahora tiene 27 direcciones.)
 3. Menú **Inspección de URLs** → pega cada una de estas y pulsa **Solicitar indexación** (hay un límite diario; reparte en 2 o 3 días):
    1. https://djantercapital.cl/
    2. https://djantercapital.cl/seleccion-de-personal/

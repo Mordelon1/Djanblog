@@ -13,6 +13,6 @@ Documentos internos en `_interno/` (no se suben a GitHub):
 | `consultoria/` (+ `ley-karin/`, `riesgos-psicosociales/`, `mediacion-conflictos/`) | Consultoría |
 | `recursos/` (6 subpáginas, 2 con Excel descargable) | Recursos gratuitos |
 | `blog/` (5 entradas) | Blog |
-| `nosotros/`, `privacidad/`, `404.html` | Páginas institucionales |
+| `nosotros/` (quiénes somos, metodología, cómo trabajamos, respaldo), `preguntas-frecuentes/`, `privacidad/`, `404.html` | Páginas institucionales |
 | `_plantilla/entrada/` | Plantilla de entrada (Google no la indexa) |
 | `robots.txt`, `sitemap.xml`, imágenes e íconos | Para Google y redes sociales |
