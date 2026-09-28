@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Consultora de RR.HH. y evaluación psicolaboral | Djanter Capital</title>
-<meta name="description" content="Consultora de gestión de personas: evaluación psicolaboral, selección, clima laboral, capacitación y People Analytics en todo Chile, presencial y remota.">
+<meta name="description" content="Consultora de gestión de personas en Chile: selección de personal, evaluación psicolaboral, clima laboral, capacitación, consultoría y People Analytics.">
 <meta name="author" content="Djanter Capital SpA">
 <meta name="theme-color" content="#1C3A4E">
 <meta property="og:type" content="website">
@@ -31,10 +31,9 @@
  "url": "https://djantercapital.cl/",
  "logo": "https://djantercapital.cl/logo-djanter-512.png",
  "image": "https://djantercapital.cl/og-djanter.jpg",
- "description": "Consultora chilena de gestión de personas: evaluación psicolaboral, selección de personal, clima y cultura, capacitación organizacional y People Analytics.",
+ "description": "Consultora chilena de gestión de personas: selección de personal, evaluación psicolaboral, clima laboral, capacitación, consultoría organizacional y People Analytics.",
  "email": "jbustos@djantercapital.cl",
  "telephone": "+56997749508",
- "taxID": "78.480.051-2",
  "address": {
   "@type": "PostalAddress",
   "addressCountry": "CL"
@@ -58,14 +57,77 @@
   }
  ],
  "knowsAbout": [
-  "Evaluación psicolaboral",
   "Selección de personal",
+  "Evaluación psicolaboral",
   "Clima organizacional",
   "Capacitación",
+  "Consultoría organizacional",
   "People Analytics",
   "Power BI",
   "Ley Karin"
- ]
+ ],
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Servicios",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Selección de personal",
+     "url": "https://djantercapital.cl/seleccion-de-personal/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Evaluación psicolaboral",
+     "url": "https://djantercapital.cl/evaluacion-psicolaboral/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Clima laboral y cultura",
+     "url": "https://djantercapital.cl/estudio-clima-laboral/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Capacitaciones",
+     "url": "https://djantercapital.cl/capacitaciones/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Consultoría organizacional",
+     "url": "https://djantercapital.cl/consultoria/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "People Analytics",
+     "url": "https://djantercapital.cl/people-analytics/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Cargos y desempeño",
+     "url": "https://djantercapital.cl/descripcion-de-cargos/"
+    }
+   }
+  ]
+ }
 }
 </script>
 <script type="application/ld+json">
@@ -442,15 +504,20 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
   .bars i{transform:none !important}
 }
 
-/* ---------- tarjetas del blog en la portada ---------- */
+/* ---------- tarjetas (recursos y blog) ---------- */
 .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.post-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-top:6px solid var(--teal);padding:28px 26px;transition:.35s var(--ease)}
+.post-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-top:6px solid var(--teal);padding:26px 24px;transition:.35s var(--ease)}
 .post-card:nth-child(3n+2){border-top-color:var(--navy)}.post-card:nth-child(3n){border-top-color:var(--orange)}
 .post-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px -22px rgba(10,20,28,.45)}
 .post-card .k{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);font-weight:700}
-.post-card h2,.post-card h3{font-size:19px;margin-top:12px;text-transform:none;letter-spacing:-.01em;line-height:1.28}
+.post-card h2,.post-card h3{font-size:18.5px;margin-top:12px;text-transform:none;letter-spacing:-.01em;line-height:1.28}
 .post-card p{margin-top:12px;font-size:14.5px;color:var(--txt-2)}
-.post-card time{margin-top:auto;padding-top:18px;font-size:12.5px;color:var(--txt-3);font-weight:500}
+.post-card time,.post-card .go{margin-top:auto;padding-top:18px;font-size:12.5px;color:var(--txt-3);font-weight:600}
+.post-card .go{color:var(--teal);text-transform:uppercase;letter-spacing:.08em}
+.card .more{margin-top:20px;display:inline-flex;gap:8px;font-size:13px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.06em}
+.card .more::after{content:"→"}.card .more:hover{color:var(--orange)}
+.card h3 a:hover{color:var(--teal)}
+.posts.two{grid-template-columns:repeat(2,1fr);margin-top:26px}
 @media (max-width:980px){.posts{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:680px){.posts{grid-template-columns:1fr}}
 
@@ -479,11 +546,10 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
     </a>
     <nav class="main">
       <a href="#servicios">Servicios</a>
-      <a href="#metodologia">Metodología</a>
-      <a href="#proceso">Cómo trabajamos</a>
-      <a href="#nosotros">Nosotros</a>
+      <a href="consultoria/">Consultoría</a>
+      <a href="recursos/">Recursos</a>
       <a href="blog/">Blog</a>
-      <a href="#faq">Preguntas</a>
+      <a href="nosotros/">Nosotros</a>
     </nav>
     <a href="#contacto" class="btn btn-p btn-sm">Solicitar propuesta</a>
     <button class="burger" id="burger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -496,7 +562,16 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
   <a href="#metodologia">Metodología</a>
   <a href="#proceso">Cómo trabajamos</a>
   <a href="#nosotros">Nosotros</a>
+  <a href="seleccion-de-personal/">Selección de personal</a>
+  <a href="evaluacion-psicolaboral/">Evaluación psicolaboral</a>
+  <a href="estudio-clima-laboral/">Clima laboral y cultura</a>
+  <a href="capacitaciones/">Capacitaciones</a>
+  <a href="consultoria/">Consultoría organizacional</a>
+  <a href="people-analytics/">People Analytics</a>
+  <a href="descripcion-de-cargos/">Cargos y desempeño</a>
+  <a href="recursos/">Recursos gratuitos</a>
   <a href="blog/">Blog</a>
+  <a href="nosotros/">Nosotros</a>
   <a href="#faq">Preguntas frecuentes</a>
   <a href="#contacto" class="btn btn-p">Solicitar propuesta</a>
 </nav>
@@ -556,6 +631,10 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
           <li><b>Evaluación psicolaboral</b> — entrevista STAR, 16PF, DISC y Lüscher; informe de idoneidad</li>
           <li><b>Assessment center</b> — ejercicios situacionales con observadores múltiples para jefaturas y finalistas equivalentes</li>
         </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 22px">
+        <a class="more" href="seleccion-de-personal/">Selección de personal</a>
+        <a class="more" href="evaluacion-psicolaboral/">Evaluación psicolaboral</a>
+        </div>
       </article>
 
       <article class="card rv">
@@ -568,6 +647,9 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
           <li><b>Evaluación de desempeño</b> — diseño del instrumento, formación de evaluadores y primer ciclo implementado</li>
           <li><b>Onboarding y desvinculación asistida</b> — plan de 30/60/90 días; protocolo de salida y entrevista de egreso</li>
         </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 22px">
+        <a class="more" href="descripcion-de-cargos/">Manual de cargos y desempeño</a>
+        </div>
       </article>
 
       <article class="card rv">
@@ -580,6 +662,9 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
           <li><b>Encuestas de pulso</b> — medición corta y periódica para saber si las acciones están funcionando</li>
           <li><b>Diagnóstico de cultura</b> — brecha documentada entre la cultura declarada y la que opera de verdad</li>
         </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 22px">
+        <a class="more" href="estudio-clima-laboral/">Estudio de clima laboral</a>
+        </div>
       </article>
 
       <article class="card rv">
@@ -594,6 +679,10 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
           <li><b>Ley Karin (21.643)</b> — diseño o revisión del protocolo de prevención y capacitación a jefaturas y trabajadores</li>
         </ul>
         <p class="note"><b>Alcance declarado:</b> la vigilancia de riesgos psicosociales opera bajo el protocolo CEAL-SM/SUSESO y su aplicación depende del organismo administrador de cada empresa (mutualidad o ISL); Djanter Capital no lo reemplaza, interviene antes y después de la medición. En materia de Ley Karin trabajamos la prevención, el protocolo y la capacitación; no ejecutamos investigaciones de denuncias.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 22px">
+        <a class="more" href="consultoria/">Consultoría</a>
+        <a class="more" href="consultoria/ley-karin/">Ley Karin</a>
+        </div>
       </article>
 
       <article class="card rv">
@@ -610,6 +699,9 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
           <li><b>Ferias de bienestar y calidad de vida laboral</b> — del beneficio suelto a un programa anual medible</li>
         </ul>
         <p class="note"><b>Alcance declarado:</b> capacitación privada contratada directamente por la empresa. Djanter Capital SpA no es OTEC y sus programas no se acogen a la franquicia tributaria SENCE.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 22px">
+        <a class="more" href="capacitaciones/">Capacitaciones</a>
+        </div>
       </article>
 
       <article class="card rv">
@@ -624,6 +716,9 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
           <li><b>Estructura y procesos de RR.HH.</b> — mapa de procesos, políticas internas y set de formatos</li>
           <li><b>Integridad y cumplimiento (Ley 20.393)</b> — código de ética, canal de denuncias y comité de ética operativos</li>
         </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 22px">
+        <a class="more" href="people-analytics/">People Analytics</a>
+        </div>
       </article>
 
     </div>
@@ -728,6 +823,39 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
   </div>
 </section>
 
+<!-- ====================== RECURSOS ====================== -->
+<section id="recursos" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="kicker">Recursos gratuitos</span>
+      <h2>Herramientas para gestionar personas con datos</h2>
+      <p>Calculadoras, plantillas y guías gratuitas, con fuentes citadas. Sin registro.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="posts">
+      <a class="post-card rv" href="recursos/calculadora-costo-reemplazo/">
+        <span class="k">Calculadora</span>
+        <h3>Calculadora del costo de reemplazo</h3>
+        <p>Cuánto cuesta reponer a un trabajador: selección, vacante, aprendizaje e indemnizaciones.</p>
+        <span class="go">Abrir →</span>
+      </a>
+      <a class="post-card rv" href="recursos/calculadora-rotacion-ausentismo/">
+        <span class="k">Calculadora</span>
+        <h3>Calculadora de rotación y ausentismo</h3>
+        <p>Tasa de rotación total, voluntaria y temprana, y tasa de ausentismo.</p>
+        <span class="go">Abrir →</span>
+      </a>
+      <a class="post-card rv" href="recursos/indicadores-rrhh/">
+        <span class="k">Plantilla Excel</span>
+        <h3>Plantilla de indicadores de RR.HH.</h3>
+        <p>Excel gratuito con 12 meses de indicadores y fórmulas listas.</p>
+        <span class="go">Abrir →</span>
+      </a>
+    </div>
+    <a href="recursos/" class="btn btn-g rv" style="margin-top:30px">Ver todos los recursos</a>
+  </div>
+</section>
+
 <!-- ====================== BLOG ====================== -->
 <section id="blog" style="border-top:1px solid var(--line)">
   <div class="wrap">
@@ -738,11 +866,23 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
       <div class="rule"></div>
     </div>
     <div class="posts">
+      <a class="post-card rv" href="blog/costo-de-reemplazar-a-un-trabajador/">
+        <span class="k">Rotación</span>
+        <h3>Cuánto cuesta reemplazar a un trabajador en Chile (y cómo calcularlo)</h3>
+        <p>Selección, vacancia, curva de aprendizaje e indemnizaciones: qué se suma cuando alguien se va, qué dicen los estudios y cómo calcularlo para tu empresa.</p>
+        <span class="go">27 de septiembre de 2026 · 7 min de lectura</span>
+      </a>
       <a class="post-card rv" href="blog/people-analytics-para-pymes/">
         <span class="k">People Analytics</span>
         <h3>People Analytics para pymes: 5 indicadores para empezar con lo que ya tienes en Excel</h3>
         <p>No necesitas un software caro ni un equipo de datos. Con cinco indicadores bien calculados, una pyme puede saber dónde se le va la gente, cuánto le cuesta y qué hacer primero.</p>
-        <time datetime="2026-09-27">27 de septiembre de 2026 · 8 min de lectura</time>
+        <span class="go">27 de septiembre de 2026 · 8 min de lectura</span>
+      </a>
+      <a class="post-card rv" href="blog/que-es-una-evaluacion-psicolaboral/">
+        <span class="k">Evaluación psicolaboral</span>
+        <h3>Evaluación psicolaboral: qué mide, cómo se hace y qué debe traer el informe</h3>
+        <p>Una guía práctica para jefaturas y encargados de RR.HH. que contratan evaluaciones y quieren saber qué están comprando.</p>
+        <span class="go">27 de septiembre de 2026 · 7 min de lectura</span>
       </a>
     </div>
     <a href="blog/" class="btn btn-g rv" style="margin-top:30px">Ver todas las entradas</a>
@@ -829,26 +969,29 @@ footer .desc{margin-top:18px;font-size:14px;color:#C8D6DD;max-width:40ch}
         <p class="desc">Servicios empresariales integrales en gestión de personas: selección y evaluación, clima y cultura, capacitación, desarrollo organizacional y analítica de datos.</p>
       </div>
       <div>
-        <h5>Áreas de servicio</h5>
-        <a href="#servicios">Reclutamiento y selección</a>
-        <a href="#servicios">Gestión y desarrollo de personas</a>
-        <a href="#servicios">Clima y cultura organizacional</a>
-        <a href="#servicios">Convivencia, equipos y cambio</a>
-        <a href="#servicios">Capacitación y formación</a>
-        <a href="#servicios">People Analytics y consultoría</a>
+        <h5>Servicios</h5>
+        <a href="seleccion-de-personal/">Selección de personal</a>
+        <a href="evaluacion-psicolaboral/">Evaluación psicolaboral</a>
+        <a href="estudio-clima-laboral/">Clima laboral y cultura</a>
+        <a href="capacitaciones/">Capacitaciones</a>
+        <a href="consultoria/">Consultoría organizacional</a>
+        <a href="people-analytics/">People Analytics</a>
+        <a href="descripcion-de-cargos/">Cargos y desempeño</a>
       </div>
       <div>
         <h5>Empresa</h5>
-        <a href="#nosotros">Quiénes somos</a>
+        <a href="nosotros/">Quiénes somos</a>
+        <a href="recursos/">Recursos gratuitos</a>
         <a href="#metodologia">Metodología</a>
         <a href="#proceso">Cómo trabajamos</a>
         <a href="blog/">Blog</a>
         <a href="#faq">Preguntas frecuentes</a>
         <a href="#contacto">Contacto</a>
+        <a href="privacidad/">Privacidad</a>
       </div>
     </div>
     <div class="legal">
-      <span>© <span id="yr">2026</span> Djanter Capital SpA · RUT 78.480.051-2 · Chile.</span>
+      <span>© <span id="yr">2026</span> Djanter Capital SpA · Chile.</span>
       <span>Sitio informativo. Los servicios se rigen por la propuesta escrita aceptada por cada cliente.</span>
     </div>
   </div>
